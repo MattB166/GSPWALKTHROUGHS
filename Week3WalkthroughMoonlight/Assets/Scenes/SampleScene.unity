@@ -226,8 +226,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GridPiece: {fileID: 5243481591677979248, guid: a9e93a84a35373545bd5c74b376d9342, type: 3}
-  Gridwidth: 6
-  Gridheight: 6
+  Gridwidth: 8
+  Gridheight: 8
   RefObj: {fileID: 856433639}
   offset: 0.79
   margin: 0.1

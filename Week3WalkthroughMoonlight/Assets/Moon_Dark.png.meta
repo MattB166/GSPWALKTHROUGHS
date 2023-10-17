@@ -152,7 +152,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Moon_Dark_0: 3152323304821044396
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

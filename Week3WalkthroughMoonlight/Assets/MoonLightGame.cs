@@ -35,6 +35,24 @@ public class MoonLightGame : GridGenerator
         // if solution valid, cleanup 
     }
 
+
+    private void PuzzleValidation(bool isPlayer)
+    {
+
+        //satisfaction criteria 1 - stars and clouds (rows and cols)
+
+
+       //2. moons
+       //
+
+
+
+
+
+
+
+    }
+
     
 
 
