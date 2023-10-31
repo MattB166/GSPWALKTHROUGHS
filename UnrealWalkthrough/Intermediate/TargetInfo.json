@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "UnrealWalkthrough",
+			"Path": "C:\\Users\\5BRAKM58\\Downloads\\GSPWALKTHROUGHS\\UnrealWalkthrough\\Source\\UnrealWalkthrough.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "UnrealWalkthroughEditor",
+			"Path": "C:\\Users\\5BRAKM58\\Downloads\\GSPWALKTHROUGHS\\UnrealWalkthrough\\Source\\UnrealWalkthroughEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
