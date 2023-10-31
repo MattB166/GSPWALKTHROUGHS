@@ -30,7 +30,7 @@ void AMyCharacter::Tick(float DeltaTime)
 
 	if (currentTime > intervalTime)
 	{
-		UGameplayStatics::OpenLevel(GetWorld(), "NewMap");
+		UGameplayStatics::OpenLevel(GetWorld(), NewLevel);
 	}
 	
 	

@@ -6,6 +6,17 @@
 #include "GameFramework/Character.h"
 #include "MyCharacter.generated.h"
 
+UENUM()
+ enum Espells
+{
+	FireBall,
+	ArcaneMissiles,
+	FrostNova
+};
+
+
+
+
 UCLASS()
 class UNREALWALKTHROUGH_API AMyCharacter : public ACharacter
 {
@@ -19,10 +30,22 @@ public:
 	float currentTime;
 	UPROPERTY(EditAnywhere, Category = "Level Settings");
 	float intervalTime; 
+	UPROPERTY(EditAnywhere, Category = "Level Settings");
+	FName NewLevel; 
+	UPROPERTY(EditAnywhere)
+    TEnumAsByte<Espells> Spellbook; 
 
+	
+	
+	
+	
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+	
+	
+	
+
 
 public:	
 	// Called every frame
@@ -31,5 +54,7 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	
 
 };
