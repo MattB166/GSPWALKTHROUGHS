@@ -18,18 +18,11 @@ void AMyCharacter::BeginPlay()
 	Super::BeginPlay();
 	GLog->Log("Custom Message");
 
+	
+	
 
-	FActorSpawnParameters spawnParams;
-
-	spawnParams.Owner = this;
-	spawnParams.Instigator = GetInstigator();
-
-
-	AActor* OurNewObj = GetWorld()->SpawnActor<AActor>(ourSpawningObject, FVector(0, 0, 500), FRotator(0), spawnParams);
-	GLog->Log("Actor Spawned");
-
-	OurNewObj->SetLifeSpan(3);
-	GLog->Log("Actor destroyed");
+	//OurNewObj->SetLifeSpan(3);
+	//GLog->Log("Actor destroyed");
 	
 }
 
@@ -48,7 +41,7 @@ void AMyCharacter::Tick(float DeltaTime)
 	
 	GLog->Log("Time is" + FString::SanitizeFloat(DeltaTime));
 	
-	
+	InstantiateBalls(1);
 }
 
 // Called to bind functionality to input
@@ -57,6 +50,28 @@ void AMyCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 }
+
+void AMyCharacter::InstantiateBalls(int amount)
+{
+	for (int i = 0; i < amount; i++)
+	{
+		FActorSpawnParameters spawnParams;
+
+		spawnParams.Owner = this;
+		spawnParams.Instigator = GetInstigator();
+
+		AActor* ourNewObj = GetWorld()->SpawnActor<AActor>(ourSpawningObject, randPos(), FRotator(0), spawnParams);
+	}
+}
+
+FVector AMyCharacter::randPos()
+{
+	return FVector(FMath::RandRange(-1000, 1000), FMath::RandRange(-1000, 1000), FMath::RandRange(-1000, 1000));
+}
+	
+
+	
+
 
 
 
