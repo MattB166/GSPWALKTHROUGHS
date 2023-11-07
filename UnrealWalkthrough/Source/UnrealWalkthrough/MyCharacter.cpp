@@ -17,7 +17,19 @@ void AMyCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	GLog->Log("Custom Message");
-	
+
+
+	FActorSpawnParameters spawnParams;
+
+	spawnParams.Owner = this;
+	spawnParams.Instigator = GetInstigator();
+
+
+	AActor* OurNewObj = GetWorld()->SpawnActor<AActor>(ourSpawningObject, FVector(0, 0, 500), FRotator(0), spawnParams);
+	GLog->Log("Actor Spawned");
+
+	OurNewObj->SetLifeSpan(3);
+	GLog->Log("Actor destroyed");
 	
 }
 
@@ -30,7 +42,7 @@ void AMyCharacter::Tick(float DeltaTime)
 
 	if (currentTime > intervalTime)
 	{
-		UGameplayStatics::OpenLevel(GetWorld(), NewLevel);
+		//UGameplayStatics::OpenLevel(GetWorld(), NewLevel);
 	}
 	
 	
@@ -45,4 +57,7 @@ void AMyCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 }
+
+
+
 

@@ -35,6 +35,10 @@ public:
 	UPROPERTY(EditAnywhere)
     TEnumAsByte<Espells> Spellbook; 
 
+
+	UPROPERTY(EditAnywhere, Category = "Spawner Category")
+	TSubclassOf<AActor> ourSpawningObject; 
+	 
 	
 	
 	
