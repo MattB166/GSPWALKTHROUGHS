@@ -18,8 +18,7 @@ void AMyCharacter::BeginPlay()
 	Super::BeginPlay();
 	GLog->Log("Custom Message");
 
-	
-	
+	InstantiateBalls(1);
 
 	//OurNewObj->SetLifeSpan(3);
 	//GLog->Log("Actor destroyed");
@@ -39,16 +38,18 @@ void AMyCharacter::Tick(float DeltaTime)
 	}
 	
 	
-	GLog->Log("Time is" + FString::SanitizeFloat(DeltaTime));
+	//GLog->Log("Time is" + FString::SanitizeFloat(DeltaTime));
 	
-	InstantiateBalls(1);
+	//InstantiateBalls(1);
 }
 
 // Called to bind functionality to input
 void AMyCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
+	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &AMyCharacter::Jump);
 
+	PlayerInputComponent->BindAxis("MoveForward", this, &AMyCharacter::MoveForward);
 }
 
 void AMyCharacter::InstantiateBalls(int amount)
@@ -68,7 +69,19 @@ FVector AMyCharacter::randPos()
 {
 	return FVector(FMath::RandRange(-1000, 1000), FMath::RandRange(-1000, 1000), FMath::RandRange(-1000, 1000));
 }
+
+void AMyCharacter::Jump()
+{
+	GLog->Log("Jump Pressed"); 
+}
+void AMyCharacter::MoveForward(float Value)
+{
 	
+	GLog->Log("Moving Forward");
+
+}
+
+
 
 	
 

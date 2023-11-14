@@ -86,6 +86,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
 	uint8 bUsingMotionControllers : 1;
 
+	void MyJump();
+	void MyMoveForward(float value);
+
 protected:
 	
 	/** Fires a projectile. */

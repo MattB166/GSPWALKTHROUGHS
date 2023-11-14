@@ -136,9 +136,27 @@ void AUnrealWalkthroughCharacter::SetupPlayerInputComponent(class UInputComponen
 	PlayerInputComponent->BindAxis("TurnRate", this, &AUnrealWalkthroughCharacter::TurnAtRate);
 	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis("LookUpRate", this, &AUnrealWalkthroughCharacter::LookUpAtRate);
+	PlayerInputComponent->BindAction("MyJump", IE_Pressed, this, &AUnrealWalkthroughCharacter::MyJump);
+
+	PlayerInputComponent->BindAxis("MyMoveForward", this, &AUnrealWalkthroughCharacter::MyMoveForward);
 }
 
-void AUnrealWalkthroughCharacter::OnFire()
+void AUnrealWalkthroughCharacter::MyJump()
+{
+	GLog->Log("Jump Pressed");
+}
+
+void AUnrealWalkthroughCharacter::MyMoveForward(float value)
+{
+	if (value != 0)
+	{
+		GLog->Log("Moving Forward");
+	}
+	
+	
+}
+
+void AUnrealWalkthroughCharacter::OnFire() 
 {
 	// try and fire a projectile
 	if (ProjectileClass != nullptr)
