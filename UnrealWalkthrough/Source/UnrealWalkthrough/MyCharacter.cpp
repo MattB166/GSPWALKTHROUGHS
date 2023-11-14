@@ -18,7 +18,7 @@ void AMyCharacter::BeginPlay()
 	Super::BeginPlay();
 	GLog->Log("Custom Message");
 
-	InstantiateBalls(1);
+	InstantiateBalls(100);
 
 	//OurNewObj->SetLifeSpan(3);
 	//GLog->Log("Actor destroyed");

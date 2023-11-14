@@ -25,3 +25,9 @@ void ABall::Tick(float DeltaTime)
 
 }
 
+void ABall::OnMyComponentWake(UPrimitiveComponent* WakingComponent, FName BoneName)
+{
+	GLog->Log("OW"); 
+}
+
+

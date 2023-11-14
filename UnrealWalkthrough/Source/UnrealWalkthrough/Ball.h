@@ -22,5 +22,7 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+	UFUNCTION()
+	void OnMyComponentWake(class UPrimitiveComponent* WakingComponent, FName BoneName); 
 
 };
