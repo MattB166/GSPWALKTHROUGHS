@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\UnrealWalkthrough.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{6318BF5D-27B6-42EC-9934-8CB89B3C4E54}</UniqueIdentifier>
+      <UniqueIdentifier>{4036B54B-6ADF-4248-BE12-EC9B07D4D43D}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\UnrealWalkthrough.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{C57DB16E-3897-4312-B92F-073662979CCE}</UniqueIdentifier>
+      <UniqueIdentifier>{7D223244-9AA7-46E3-9C11-5C8D6706E842}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\UnrealWalkthrough">
-      <UniqueIdentifier>{0C150347-5E41-4A9F-8477-094DB218CE68}</UniqueIdentifier>
+      <UniqueIdentifier>{2C95A3EA-758C-4892-B6E7-5A805E66582D}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\UnrealWalkthrough\Ball.cpp">
       <Filter>Source\UnrealWalkthrough</Filter>
@@ -38,10 +38,34 @@
     <ClInclude Include="..\..\Source\UnrealWalkthrough\Ball.h">
       <Filter>Source\UnrealWalkthrough</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\UnrealWalkthrough\MyAnimInstance.cpp">
+      <Filter>Source\UnrealWalkthrough</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UnrealWalkthrough\MyAnimInstance.h">
+      <Filter>Source\UnrealWalkthrough</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UnrealWalkthrough\MyAnimNotify.cpp">
+      <Filter>Source\UnrealWalkthrough</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UnrealWalkthrough\MyAnimNotify.h">
+      <Filter>Source\UnrealWalkthrough</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\UnrealWalkthrough\MyCharacter.cpp">
       <Filter>Source\UnrealWalkthrough</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\UnrealWalkthrough\MyCharacter.h">
+      <Filter>Source\UnrealWalkthrough</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UnrealWalkthrough\MyClass.cpp">
+      <Filter>Source\UnrealWalkthrough</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UnrealWalkthrough\MyClass.h">
+      <Filter>Source\UnrealWalkthrough</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UnrealWalkthrough\MyNinja.cpp">
+      <Filter>Source\UnrealWalkthrough</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UnrealWalkthrough\MyNinja.h">
       <Filter>Source\UnrealWalkthrough</Filter>
     </ClInclude>
     <None Include="..\..\Source\UnrealWalkthrough\UnrealWalkthrough.Build.cs">
