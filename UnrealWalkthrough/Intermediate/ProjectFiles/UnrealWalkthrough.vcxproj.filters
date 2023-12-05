@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\UnrealWalkthrough.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{64AEF9CD-8452-4E4A-B3BD-7A1479F543D9}</UniqueIdentifier>
+      <UniqueIdentifier>{5757EB0F-CAE5-4251-A74A-12005790FF49}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\UnrealWalkthrough.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{7ECAFB10-1F34-4D26-B210-CF76BB44DF9E}</UniqueIdentifier>
+      <UniqueIdentifier>{CFF84248-8708-4684-8A1A-2DB90BFD1320}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,12 +30,18 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\UnrealWalkthrough">
-      <UniqueIdentifier>{82910240-1C92-4C86-BD3C-A1C00C4EFC29}</UniqueIdentifier>
+      <UniqueIdentifier>{90571881-C11F-49B2-AE66-23A828293A56}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\UnrealWalkthrough\Ball.cpp">
       <Filter>Source\UnrealWalkthrough</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\UnrealWalkthrough\Ball.h">
+      <Filter>Source\UnrealWalkthrough</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UnrealWalkthrough\GraphicsActor.cpp">
+      <Filter>Source\UnrealWalkthrough</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UnrealWalkthrough\GraphicsActor.h">
       <Filter>Source\UnrealWalkthrough</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\UnrealWalkthrough\MyAnimInstance.cpp">
